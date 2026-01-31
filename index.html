@@ -1,14 +1,279 @@
-AA Smart International Limited
-Smart. Safe. Data-Driven.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA Smart International Limited – Smart. Safe. Data-Driven.</title>
+    <meta name="description" content="AA Smart delivers intelligent, secure technology solutions for critical infrastructure, commercial enterprise, and public services, headquartered in Hong Kong and serving the Greater Bay Area.">
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.8;
+            background: #f9fafc;
+        }
+        /* Header Navigation */
+        header {
+            background: white;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #003366;
+        }
+        /* Hero Banner */
+        .banner {
+            background: url('./images/banner.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 6rem 5%;
+            position: relative;
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,51,102,0.7);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+        .banner h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 0.9rem 2.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #004a99;
+        }
+        /* Content Sections */
+        .section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #003366;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 0.5rem;
+        }
+        /* About Us */
+        .about-text {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+        }
+        /* Service Areas */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+        .service-card ul {
+            list-style: none;
+        }
+        .service-card li {
+            padding: 0.3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .service-card li::before {
+            content: '🔹';
+            color: #0066cc;
+        }
+        /* Contact Us */
+        .contact {
+            background: #f5f9ff;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact-info {
+            margin: 1rem 0;
+        }
+        .contact-info i {
+            color: #0066cc;
+            margin-right: 0.5rem;
+        }
+        /* Footer */
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 5%;
+            margin-top: 2rem;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 2rem 5%;
+            }
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./images/logo.jpeg" alt="AA Smart Logo">
+                <div class="logo-text">AA Smart International Limited</div>
+            </div>
+        </div>
+    </header>
 
-We design and deliver intelligent, secure technology solutions for organisations across critical infrastructure, commercial enterprise, and public services — launching from our Greater Bay Area base and growing strategically within this dynamic market.
+    <!-- Hero Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Smart. Safe. Data-Driven.</h1>
+            <p class="tagline">Intelligent, secure technology solutions for critical infrastructure, commercial enterprise, and public services</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
 
-By integrating advanced sensing (LiDAR, drones, robotics, camera systems (for high-resolution visual inspection, defect detection, and photogrammetry), satellite analytics (for wide-area infrastructure monitoring, environmental change detection, and asset integrity), and multi-sensor systems) with real-time data analytics, we drive enhanced safety, operational efficiency, resilience, and smarter decision-making in high-stakes environments, including:
-🔹 Critical Infrastructure – Transport networks, energy utilities, and urban assets
-🔹 Commercial Enterprise – Logistics & supply chains (optimising routes, visibility, and throughput), property development, manufacturing, and financial services
-🔹 Public Services – Healthcare delivery, emergency response, and smart city initiatives
+    <!-- About Us -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-text">
+            <p>AA Smart International Limited designs and delivers intelligent, secure technology solutions for organisations across critical infrastructure, commercial enterprise, and public services — launching from our Greater Bay Area base and growing strategically within this dynamic market.</p>
+            <br>
+            <p>By integrating advanced sensing (LiDAR, drones, robotics, camera systems for high-resolution visual inspection, defect detection, and photogrammetry), satellite analytics (for wide-area infrastructure monitoring, environmental change detection, and asset integrity), and multi-sensor systems with real-time data analytics, we drive enhanced safety, operational efficiency, resilience, and smarter decision-making in high-stakes environments.</p>
+            <br>
+            <p>We collaborate with world-class technology providers — including specialists in autonomous perception, low-altitude systems, and geospatial intelligence — to embed cutting-edge capabilities that are secure, compliant, scalable, efficient, and built for long-term operational sustainability.</p>
+            <br>
+            <p>Headquartered in Hong Kong, we’re growing from the heart of the Greater Bay Area outward — focused on real, measurable outcomes for organisations where reliability outweighs hype.</p>
+        </div>
+    </section>
 
-We collaborate with world-class technology providers — including specialists in autonomous perception, low-altitude systems, and geospatial intelligence — to embed cutting-edge capabilities that are secure, compliant, scalable, efficient, and built for long-term operational sustainability.
+    <!-- Service Areas -->
+    <section class="section" id="services">
+        <h2 class="section-title">Our Service Areas</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Critical Infrastructure</h3>
+                <ul>
+                    <li>Transport networks</li>
+                    <li>Energy utilities</li>
+                    <li>Urban assets</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Commercial Enterprise</h3>
+                <ul>
+                    <li>Logistics & supply chains</li>
+                    <li>Property development</li>
+                    <li>Manufacturing & financial services</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Public Services</h3>
+                <ul>
+                    <li>Healthcare delivery</li>
+                    <li>Emergency response</li>
+                    <li>Smart city initiatives</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-Headquartered in Hong Kong, we’re growing from the heart of the Greater Bay Area outward — focused on real, measurable outcomes for organisations where reliability outweighs hype.
+    <!-- Contact Us -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact">
+            <div class="contact-info">
+                <i>📍</i> Headquarters: Hong Kong (Heart of the Greater Bay Area)
+            </div>
+            <div class="contact-info">
+                <i>📧</i> Email: info@aasmart.com.hk
+            </div>
+            <div class="contact-info">
+                <i>📞</i> Phone: +852 XXXXXXXX
+            </div>
+            <div class="contact-info">
+                <i>💬</i> WhatsApp: +852 XXXXXXXX
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 AA Smart International Limited. All Rights Reserved.</p>
+        <p>Growing from the Greater Bay Area, delivering smart, secure solutions worldwide</p>
+    </footer>
+</body>
+</html>
 
