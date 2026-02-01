@@ -1,279 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AA Smart International Limited – Smart. Safe. Data-Driven.</title>
-    <meta name="description" content="AA Smart delivers intelligent, secure technology solutions for critical infrastructure, commercial enterprise, and public services, headquartered in Hong Kong and serving the Greater Bay Area.">
-    <style>
-        /* Base Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            color: #333;
-            line-height: 1.8;
-            background: #f9fafc;
-        }
-        /* Header Navigation */
-        header {
-            background: white;
-            padding: 1rem 5%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-        .logo img {
-            width: 60px;
-            height: auto;
-        }
-        .logo-text {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #003366;
-        }
-        /* Hero Banner */
-        .banner {
-            background: url('./banner.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 6rem 5%;
-            position: relative;
-        }
-        .banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,51,102,0.7);
-        }
-        .banner-content {
-            position: relative;
-            z-index: 1;
-        }
-        .banner h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-        }
-        .tagline {
-            font-size: 1.3rem;
-            margin-bottom: 2.5rem;
-            opacity: 0.9;
-        }
-        .btn {
-            display: inline-block;
-            background: #0066cc;
-            color: white;
-            padding: 0.9rem 2.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: #004a99;
-        }
-        /* Content Sections */
-        .section {
-            padding: 4rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-title {
-            font-size: 2rem;
-            color: #003366;
-            text-align: center;
-            margin-bottom: 3rem;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 0.5rem;
-        }
-        /* About Us */
-        .about-text {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
-        }
-        /* Service Areas */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .service-card h3 {
-            color: #003366;
-            margin-bottom: 1rem;
-        }
-        .service-card ul {
-            list-style: none;
-        }
-        .service-card li {
-            padding: 0.3rem 0;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .service-card li::before {
-            content: '🔹';
-            color: #0066cc;
-        }
-        /* Contact Us */
-        .contact {
-            background: #f5f9ff;
-            border-radius: 8px;
-            padding: 2rem;
-            text-align: center;
-        }
-        .contact-info {
-            margin: 1rem 0;
-        }
-        .contact-info i {
-            color: #0066cc;
-            margin-right: 0.5rem;
-        }
-        /* Footer */
-        footer {
-            background: #003366;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 5%;
-            margin-top: 2rem;
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .banner h1 {
-                font-size: 2rem;
-            }
-            .section {
-                padding: 2rem 5%;
-            }
-            .header-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AA Smart International Limited | Smart. Safe. Data-Driven.</title>
+  <meta name="description" content="Intelligent, secure, data-driven solutions for critical infrastructure, commercial enterprises, and public services in Hong Kong and the Greater Bay Area."/>
+  
+  <style>
+    :root {
+      --primary: #0a5c9e;      /* Deep blue */
+      --secondary: #00a0df;    /* Accent blue */
+      --dark: #1a1a1a;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: var(--light);
+    }
+    header {
+      background: linear-gradient(rgba(10, 92, 158, 0.85), rgba(10, 92, 158, 0.85)), url('https://www.jouav.com/wp-content/uploads/2022/08/lidar-river.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 80px;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+    h2 { font-size: 2.4rem; margin: 2rem 0 1rem; color: var(--primary); }
+    .tagline { font-size: 1.5rem; margin-bottom: 2rem; font-weight: 300; }
+    .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 1rem 0.5rem;
+      transition: all 0.3s;
+    }
+    .btn:hover { background: #0088c2; transform: translateY(-2px); }
+    section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); }
+    .card img { width: 100%; height: 220px; object-fit: cover; }
+    .card-content { padding: 1.8rem; }
+    .contact { background: var(--dark); color: white; text-align: center; }
+    .contact a { color: var(--secondary); text-decoration: none; }
+    footer { background: #111; color: #aaa; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.4rem; }
+      header { padding: 80px 15px 60px; min-height: 50vh; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="./logo.jpeg" alt="AA Smart Logo">
-                <div class="logo-text">AA Smart International Limited</div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Hero Banner -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Smart. Safe. Data-Driven.</h1>
-            <p class="tagline">Intelligent, secure technology solutions for critical infrastructure, commercial enterprise, and public services</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-    </section>
+  <header>
+    <h1>AA Smart International Limited</h1>
+    <p class="tagline">Smart. Safe. Data-Driven.</p>
+    <p style="font-size:1.2rem; max-width:800px; margin:0 auto 2rem;">
+      Delivering intelligent, secure, and data-driven solutions powered by advanced sensing technologies for critical infrastructure, commercial enterprises, and public services in the Heart of the Greater Bay Area.
+    </p>
+    <a href="mailto:contact@aasmart.com.hk" class="btn">Get in Touch</a>
+    <a href="https://wa.me/85294417980" class="btn">WhatsApp +852 9441 7980</a>
+  </header>
 
-    <!-- About Us -->
-    <section class="section" id="about">
-        <h2 class="section-title">About Us</h2>
-        <div class="about-text">
-            <p>AA Smart International Limited designs and delivers intelligent, secure technology solutions for organisations across critical infrastructure, commercial enterprise, and public services — launching from our Greater Bay Area base and growing strategically within this dynamic market.</p>
-            <br>
-            <p>By integrating advanced sensing (LiDAR, drones, robotics, camera systems for high-resolution visual inspection, defect detection, and photogrammetry), satellite analytics (for wide-area infrastructure monitoring, environmental change detection, and asset integrity), and multi-sensor systems with real-time data analytics, we drive enhanced safety, operational efficiency, resilience, and smarter decision-making in high-stakes environments.</p>
-            <br>
-            <p>We collaborate with world-class technology providers — including specialists in autonomous perception, low-altitude systems, and geospatial intelligence — to embed cutting-edge capabilities that are secure, compliant, scalable, efficient, and built for long-term operational sustainability.</p>
-            <br>
-            <p>Headquartered in Hong Kong, we’re growing from the heart of the Greater Bay Area outward — focused on real, measurable outcomes for organisations where reliability outweighs hype.</p>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="max-width:900px; margin:0 auto; font-size:1.15rem;">
+      AA Smart International Limited is a Hong Kong-based technology company specializing in cutting-edge solutions that enhance safety, efficiency, resilience, and decision-making. 
+      We integrate LiDAR, drones, robotics, satellite analytics, and multi-sensor systems with real-time data intelligence.
+    </p>
+  </section>
 
-    <!-- Service Areas -->
-    <section class="section" id="services">
-        <h2 class="section-title">Our Service Areas</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Critical Infrastructure</h3>
-                <ul>
-                    <li>Transport networks</li>
-                    <li>Energy utilities</li>
-                    <li>Urban assets</li>
-                </ul>
-            </div>
-            <div class="service-card">
-                <h3>Commercial Enterprise</h3>
-                <ul>
-                    <li>Logistics & supply chains</li>
-                    <li>Property development</li>
-                    <li>Manufacturing & financial services</li>
-                </ul>
-            </div>
-            <div class="service-card">
-                <h3>Public Services</h3>
-                <ul>
-                    <li>Healthcare delivery</li>
-                    <li>Emergency response</li>
-                    <li>Smart city initiatives</li>
-                </ul>
-            </div>
+  <section id="solutions" style="background:#f0f4f8;">
+    <h2>Our Solutions</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://www.yellowscan.com/wp-content/uploads/2023/08/Lidar-Drone-Everything-you-need-to-know-about-Lidars-on-UAVs.jpg.webp" alt="LiDAR-equipped drone inspecting infrastructure">
+        <div class="card-content">
+          <h3>LiDAR + Drone Inspection</h3>
+          <p>High-precision 3D scanning and defect detection for bridges, transport networks, utilities, and assets using advanced LiDAR payloads on UAVs.</p>
         </div>
-    </section>
-
-    <!-- Contact Us -->
-    <section class="section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact">
-            <div class="contact-info">
-                <i>📍</i> Headquarters: Hong Kong (Heart of the Greater Bay Area)
-            </div>
-            <div class="contact-info">
-                <i>📧</i> Email: contact@aasmart.com.hk
-            </div>
-            <div class="contact-info">
-                <i>📞</i> Phone: +852 9441 7980
-            </div>
-            <div class="contact-info">
-                <i>💬</i> WhatsApp: +852 9441 7980
-            </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://www.geographyrealm.com/wp-content/uploads/2022/10/land-use-change-remote-sensing-maryland-naip-usgs.jpg" alt="Satellite imagery before/after change detection">
+        <div class="card-content">
+          <h3>Satellite Analytics</h3>
+          <p>Wide-area monitoring, environmental change detection, asset integrity assessment, and compliance tracking through multi-temporal satellite data.</p>
         </div>
-    </section>
+      </div>
+      
+      <div class="card">
+        <img src="https://ulctechnologies.com/wp-content/uploads/2022/01/cirris-xi-white-900w.jpg" alt="Multi-sensor inspection robot">
+        <div class="card-content">
+          <h3>Multi-Sensor Robotics</h3>
+          <p>Autonomous ground-based systems for close-range inspection, real-time data collection, and maintenance in challenging environments like pipelines and facilities.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQG6cKXmW1htBg/article-cover_image-shrink_720_1280/B56ZlVoRWPI0AI-/0/1758078245899?e=2147483647&v=beta&t=H4iYZH-SsTRM4n7LKLsVZ-2G8y1kw0YNqCobLBcnVoQ" alt="Greater Bay Area smart city with drone overlays">
+        <div class="card-content">
+          <h3>Smart City & Greater Bay Area Integration</h3>
+          <p>End-to-end solutions combining aerial, satellite, and ground sensing for urban resilience, smart infrastructure, and sustainable development in Hong Kong and the GBA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 AA Smart International Limited. All Rights Reserved.</p>
-        <p>Growing from the Greater Bay Area, delivering smart, secure solutions worldwide</p>
-    </footer>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p style="font-size:1.3rem; margin:1.5rem 0;">
+      Ready to discuss how we can support your project?<br>
+      Reach out today.
+    </p>
+    <p>
+      Email: <a href="mailto:contact@aasmart.com.hk">contact@aasmart.com.hk</a><br>
+      Phone / WhatsApp: <a href="https://wa.me/85294417980">+852 9441 7980</a>
+    </p>
+    <p style="margin-top:2rem; font-size:1.1rem;">
+      Hong Kong – Heart of the Greater Bay Area
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 AA Smart International Limited. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-
