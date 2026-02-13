@@ -3,147 +3,223 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AA Smart International Limited | Smart. Safe. Data-Driven.</title>
-  <meta name="description" content="Intelligent, secure, data-driven solutions for critical infrastructure, commercial enterprises, and public services in Hong Kong and the Greater Bay Area."/>
-  
+  <title>AA Smart International Limited | Intelligent Sensing Solution Provider</title>
+  <meta name="description" content="Empowering Education, Health, Smart City, and Finance with LiDAR, Drones, Robotics, Satellite Analytics, and Conversational AI."/>
   <style>
     :root {
-      --primary: #0a5c9e;      /* Deep blue */
-      --secondary: #00a0df;    /* Accent blue */
-      --dark: #1a1a1a;
-      --light: #f8f9fa;
-      --gray: #6c757d;
+      --bg: #0a0e17;
+      --text: #e0e7ff;
+      --accent: #00d4ff;
+      --card-bg: rgba(20, 25, 40, 0.7);
+      --border: rgba(0, 212, 255, 0.2);
     }
-    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      color: #333;
-      background: var(--light);
     }
-    header {
-      background: linear-gradient(rgba(10, 92, 158, 0.85), rgba(10, 92, 158, 0.85)), url('https://www.jouav.com/wp-content/uploads/2022/08/lidar-river.jpg') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 120px 20px 80px;
-      min-height: 60vh;
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Hero */
+    #hero {
+      height: 100vh;
+      min-height: 700px;
+      background: linear-gradient(rgba(10,14,23,0.6), rgba(10,14,23,0.8)),
+                  url('https://thumbs.dreamstime.com/b/digital-network-overlay-hong-kong-skyline-dusk-354045651.jpg') center/cover no-repeat fixed;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
-    h1 { font-size: 3.2rem; margin-bottom: 1rem; }
-    h2 { font-size: 2.4rem; margin: 2rem 0 1rem; color: var(--primary); }
-    .tagline { font-size: 1.5rem; margin-bottom: 2rem; font-weight: 300; }
+    #hero h1 { font-size: 3.8rem; margin: 0.2em 0; }
+    #hero h2 { font-size: 1.8rem; opacity: 0.9; margin: 0.5em 0 1.5em; }
     .btn {
       display: inline-block;
-      background: var(--secondary);
-      color: white;
       padding: 14px 32px;
-      border-radius: 50px;
-      text-decoration: none;
+      background: var(--accent);
+      color: #000;
       font-weight: bold;
-      margin: 1rem 0.5rem;
+      border-radius: 50px;
+      margin: 10px;
       transition: all 0.3s;
     }
-    .btn:hover { background: #0088c2; transform: translateY(-2px); }
-    section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2.5rem;
-      margin-top: 3rem;
-    }
+    .btn:hover { background: #00b8e0; transform: translateY(-3px); }
+
+    /* Sections */
+    section { padding: 80px 0; }
+    h2 { text-align: center; font-size: 2.8rem; margin-bottom: 1em; color: var(--accent); }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
     .card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
       transition: transform 0.3s;
     }
     .card:hover { transform: translateY(-10px); }
-    .card img { width: 100%; height: 220px; object-fit: cover; }
-    .card-content { padding: 1.8rem; }
-    .contact { background: var(--dark); color: white; text-align: center; }
-    .contact a { color: var(--secondary); text-decoration: none; }
-    footer { background: #111; color: #aaa; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1.2em;
+    }
+    .tech-list { list-style: none; padding: 0; font-size: 1.1rem; }
+    .tech-list li { margin: 0.6em 0; }
+
+    /* CTA */
+    #cta {
+      background: linear-gradient(135deg, #001f3f, #003366);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #05070f;
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
     @media (max-width: 768px) {
-      h1 { font-size: 2.4rem; }
-      header { padding: 80px 15px 60px; min-height: 50vh; }
+      #hero h1 { font-size: 2.8rem; }
+      #hero h2 { font-size: 1.4rem; }
+      section { padding: 60px 0; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>AA Smart International Limited</h1>
-    <p class="tagline">Smart. Safe. Data-Driven.</p>
-    <p style="font-size:1.2rem; max-width:800px; margin:0 auto 2rem;">
-      Delivering intelligent, secure, and data-driven solutions powered by advanced sensing technologies for critical infrastructure, commercial enterprises, and public services in the Heart of the Greater Bay Area.
-    </p>
-    <a href="mailto:contact@aasmart.com.hk" class="btn">Get in Touch</a>
-  </header>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p style="max-width:900px; margin:0 auto; font-size:1.15rem;">
-      AA Smart International Limited is a Hong Kong-based technology company specializing in cutting-edge solutions that enhance safety, efficiency, resilience, and decision-making. 
-      We integrate LiDAR, drones, robotics, satellite analytics, and multi-sensor systems with real-time data intelligence.
-    </p>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>AA Smart International Limited</h1>
+      <h2>Intelligent Sensing Solution Provider</h2>
+      <p style="font-size: 1.4rem; max-width: 700px; margin: 0 auto 2em;">
+        Empowering <strong>Education • Health • Smart City • Finance</strong><br>
+        with integrated LiDAR • Drones • Robotics • Satellite Analytics • Real-time Intelligence • Conversational AI
+      </p>
+      <a href="#focus" class="btn">Explore Solutions ↓</a>
+      <a href="#cta" class="btn">Get in Touch</a>
+    </div>
   </section>
 
-  <section id="solutions" style="background:#f0f4f8;">
-    <h2>Our Solutions</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://www.yellowscan.com/wp-content/uploads/2023/08/Lidar-Drone-Everything-you-need-to-know-about-Lidars-on-UAVs.jpg.webp" alt="LiDAR-equipped drone inspecting infrastructure">
-        <div class="card-content">
-          <h3>LiDAR + Drone Inspection</h3>
-          <p>High-precision 3D scanning and defect detection for bridges, transport networks, utilities, and assets using advanced LiDAR payloads on UAVs.</p>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About AA Smart</h2>
+      <img src="https://segments.ai/wp-content/uploads/2024/02/Mastering-point-clouds-data.jpg" alt="3D LiDAR Point Cloud Visualization" style="width:100%; max-height:500px; object-fit:cover; border-radius:16px; margin-bottom:2em;"/>
+      <p style="font-size:1.2rem; max-width:900px; margin:0 auto;">
+        AA Smart is an <strong>intelligent sensing solution provider</strong> delivering precise, actionable intelligence. We integrate high-precision LiDAR, drones, autonomous robotics, satellite analytics, and multi-sensor fusion — enhanced by conversational AI — to create tailored, end-to-end systems that improve safety, efficiency, and decision-making.
+      </p>
+      <p style="font-size:1.2rem; max-width:900px; margin:1.5em auto;">
+        From 3D digital twins and hospital robotics to urban resilience platforms, secure financial monitoring, and natural-language data access — we deliver reliable solutions with rapid deployment.<br><br>
+        <strong>Local expertise. Cutting-edge integration. Intelligent outcomes.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- Focus Areas -->
+  <section id="focus" style="background:#0d1421;">
+    <div class="container">
+      <h2>Focus Areas</h2>
+      <div class="grid-4">
+
+        <div class="card">
+          <img src="https://static.designboom.com/wp-content/uploads/2021/01/zaha-hadid-architects-student-residence-development-hong-kong-university-of-science-and-technology-designboom-2.jpg" alt="Modern Hong Kong University Campus"/>
+          <h3>Education</h3>
+          <p>Safer, smarter learning environments</p>
+          <ul class="tech-list">
+            <li>• 3D digital twins</li>
+            <li>• Real-time occupancy & hazard monitoring</li>
+            <li>• Drone patrols</li>
+            <li>• Campus analytics</li>
+            <li>• Conversational bots for queries</li>
+          </ul>
         </div>
-      </div>
-      
-      <div class="card">
-        <img src="https://www.geographyrealm.com/wp-content/uploads/2022/10/land-use-change-remote-sensing-maryland-naip-usgs.jpg" alt="Satellite imagery before/after change detection">
-        <div class="card-content">
-          <h3>Satellite Analytics</h3>
-          <p>Wide-area monitoring, environmental change detection, asset integrity assessment, and compliance tracking through multi-temporal satellite data.</p>
+
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/autonomous-delivery-robots-modern-hospital-corridor-navigate-clean-white-showcasing-futuristic-healthcare-logistics-408488626.jpg" alt="Hospital with Autonomous Robots"/>
+          <h3>Health</h3>
+          <p>Efficient, intelligent healthcare facilities</p>
+          <ul class="tech-list">
+            <li>• Autonomous logistics & disinfection robots</li>
+            <li>• Asset tracking</li>
+            <li>• Predictive maintenance</li>
+            <li>• Patient engagement chatbots</li>
+          </ul>
         </div>
-      </div>
-      
-      <div class="card">
-        <img src="https://ulctechnologies.com/wp-content/uploads/2022/01/cirris-xi-white-900w.jpg" alt="Multi-sensor inspection robot">
-        <div class="card-content">
-          <h3>Multi-Sensor Robotics</h3>
-          <p>Autonomous ground-based systems for close-range inspection, real-time data collection, and maintenance in challenging environments like pipelines and facilities.</p>
+
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/hong-kong-cityscape-night-skyscrapers-tall-buildings-victoria-harbour-drone-aerial-view-hong-kong-cityscape-night-155526699.jpg" alt="Drone View over Hong Kong"/>
+          <h3>Smart City</h3>
+          <p>Resilient, sustainable urban infrastructure</p>
+          <ul class="tech-list">
+            <li>• Infrastructure monitoring</li>
+            <li>• Traffic & environmental intelligence</li>
+            <li>• Emergency visualization</li>
+            <li>• Public service chatbots</li>
+          </ul>
         </div>
-      </div>
-      
-      <div class="card">
-        <img src="https://media.licdn.com/dms/image/v2/D5612AQG6cKXmW1htBg/article-cover_image-shrink_720_1280/B56ZlVoRWPI0AI-/0/1758078245899?e=2147483647&v=beta&t=H4iYZH-SsTRM4n7LKLsVZ-2G8y1kw0YNqCobLBcnVoQ" alt="Greater Bay Area smart city with drone overlays">
-        <div class="card-content">
-          <h3>Smart City & Greater Bay Area Integration</h3>
-          <p>End-to-end solutions combining aerial, satellite, and ground sensing for urban resilience, smart infrastructure, and sustainable development in Hong Kong and the GBA.</p>
+
+        <div class="card">
+          <img src="https://network-king.net/wp-content/uploads/2024/08/datacenterfuture-1200x900.jpeg" alt="High-tech Data Center with Robotics"/>
+          <h3>Finance</h3>
+          <p>Secure, high-continuity operations</p>
+          <ul class="tech-list">
+            <li>• 24/7 facility monitoring</li>
+            <li>• Risk & compliance tracking</li>
+            <li>• Real-time asset awareness</li>
+            <li>• Secure query chatbots</li>
+          </ul>
         </div>
+
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p style="font-size:1.3rem; margin:1.5rem 0;">
-      Ready to discuss how we can support your project?<br>
-      Reach out today.
-    </p>
-    <p>
-      Email: <a href="mailto:contact@aasmart.com.hk">contact@aasmart.com.hk</a><br>
-    </p>
-    <p style="margin-top:2rem; font-size:1.1rem;">
-      Hong Kong – Heart of the Greater Bay Area
-    </p>
+  <!-- Core Technologies -->
+  <section id="tech">
+    <div class="container">
+      <h2>Integrated Technology Stack</h2>
+      <img src="https://sendbird.imgix.net/cms/Chatbot-UI_Customize-bot.png" alt="Modern Chatbot Interface" style="width:100%; max-height:500px; object-fit:cover; border-radius:16px; margin-bottom:2em;"/>
+      <ul class="tech-list" style="max-width:800px; margin:0 auto; font-size:1.15rem;">
+        <li>• High-Precision <strong>LiDAR</strong> — Millimeter-accurate 3D capture</li>
+        <li>• <strong>Drone Systems</strong> — Aerial assessment</li>
+        <li>• <strong>Autonomous Robotics</strong> — Smart automation</li>
+        <li>• <strong>Satellite Analytics</strong> — Broad-scale monitoring</li>
+        <li>• <strong>Multi-Sensor Fusion + AI</strong> — Real-time intelligence</li>
+        <li>• <strong>Conversational AI & Chatbots</strong> — Natural-language access (secure, 24/7)</li>
+      </ul>
+      <p style="text-align:center; margin-top:2em; font-size:1.2rem;">
+        We combine these into complete systems — enabling users to interact with data conversationally (e.g., “Show current occupancy” or “Report facility status”).
+      </p>
+    </div>
   </section>
 
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <h2>Ready for intelligent sensing + conversational intelligence?</h2>
+      <p style="font-size:1.4rem; margin:1em 0 2em;">Let's discuss a tailored solution — including chatbot integration.</p>
+      <a href="mailto:contact@aasmart.com.hk" class="btn" style="font-size:1.3rem;">Schedule a Discussion</a>
+      <p style="margin-top:1.5em;">Email: <a href="mailto:contact@aasmart.com.hk">contact@aasmart.com.hk</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 AA Smart International Limited. All rights reserved.</p>
+    <div class="container">
+      <p>© 2026 AA Smart International Limited<br>
+      <a href="#">Privacy</a> • <a href="#">Terms</a></p>
+    </div>
   </footer>
 
 </body>
